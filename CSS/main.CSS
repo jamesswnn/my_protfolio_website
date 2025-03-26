@@ -116,23 +116,28 @@ body {
     .menu-toggle {
         display: block; /* แสดงเมนูปุ่ม ☰ */
         margin-right: -350px; /* เว้นขอบขวาเพิ่มขึ้น */
-        border: 1px sol/*  */id red;
     }
 
     .navbar ul {
-        display: none; /* ซ่อนไว้ก่อน */
+        visibility: hidden; /* ซ่อนเมนูไว้ */
+        opacity: 0; /* เริ่มต้นที่โปร่งใส */
         flex-direction: column;
         position: absolute;
         top: 60px;
         right: 20px;
-        background: #222222;
+        background: #161616;
         width: 200px;
         border-radius: 8px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-20px); /* เลื่อนขึ้นจากด้านล่าง */
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0s linear 0.3s; /* เพิ่ม transition */
     }
 
     .navbar ul.show {
-        display: flex; /* แสดงเมนูเมื่อคลิกปุ่ม ☰ */
+        visibility: visible; /* แสดงเมนู */
+        opacity: 1; /* ทำให้โปร่งใส */
+        transform: translateY(0); /* เลื่อนกลับที่ตำแหน่งเดิม */
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* ทำให้แสดงทันที */
     }
 
     .navbar ul li {
@@ -417,7 +422,6 @@ body {
     justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
     text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
     border: 1px sol/*  */id red;
-    padding: 0 30px;
 }
 
 .info {
@@ -459,7 +463,6 @@ body {
     justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
     text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
     border: 1px sol/*  */id red;
-    padding: 0 30px;
 }
 
 .info {
@@ -502,7 +505,6 @@ body {
     justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
     text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
     border: 1px sol/*  */id red;
-    padding: 0 30px;
 }
 
 .info {
@@ -545,8 +547,6 @@ a.more-button:hover {
     background-color: #424242; /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
     transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
 }
-
-
 
 
 

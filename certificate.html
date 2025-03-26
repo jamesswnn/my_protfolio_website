@@ -1,85 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/certificate.css">
 </head>
-
-<style>
-    html {
-        scroll-behavior: smooth; /* ทำให้การเลื่อนเป็นแบบ Smooth */
-    }
-    .container {
-        max-width: 800px;
-        margin: auto;
-    }
-    .navbar ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        background: #333;
-        padding: 10px;
-    }
-    .navbar ul li {
-        display: inline;
-    }
-    .navbar ul li a {
-        color: white;
-        text-decoration: none;
-        padding: 5px 10px;
-    }
-    .section {
-        padding: 50px;
-        height: 500px;
-        border-bottom: 1px solid #ccc;
-    }
-</style>
 
 <body>
     <div class="container">
-        <!-- Navbar -->
+        <!-- navbar -->
         <div class="tap-menu">
             <div class="navbar">
+                <button class="menu-toggle">&#9776;</button> <!-- ปุ่ม ☰ -->
                 <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#activity">Activity</a></li>
-                    <li><a href="#certificate">Certificate</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project-page/project1-ColorJourney.html">Projects</a></li>
+                    <li><a href="activity.html">Activity</a></li>
+                    <li><a href="certificate.html">Certificate </a></li>
                 </ul>
             </div>
         </div>
-    
-        <!-- Sections -->
-        <div class="section" id="projects">
-            <h2>PROJECTS</h2>
-            <p>เนื้อหาเกี่ยวกับ Projects...</p>
+
+        <div class="certificate">
+            <h3 class="gradient-text-certificate">CERTIFICATE</h3>
+            <!-- 1-3 -->
+            <div class="colum1-3">
+                <div class="colum1">
+                    <img src="assets/certificateALL/1_WebEditor70National.png" alt="1_WebEditor70National"
+                        style="width: 310px; height: 210px;">
+                    <span>รางวัล: เหรียญเงิน การแข่งขันสร้างWeb Editor ศิลปหัตกรรมนักเรียน ระดับชาติ ครั้งที่70</span>
+                </div>
+                <div class="colum2">
+                    <img src="assets/certificateALL/2_WebEditor70.png" alt="2_WebApp71"
+                        style="width: 310px; height: 210px;">
+                    <span>รางวัล: เหรียญทอง ชนะเลิศ การแข่งขันสร้างWeb Editor ศิลปหัตกรรมนักเรียน ระดับเขตพื้นที่การศึกษา ครั้งที่ 70</span>
+                </div>
+                <div class="colum3">
+                    <img src="assets/certificateALL/3_WebApp71.png" alt="3_ios_Thitisak_Wantha"
+                        style="width: 310px; height: 210px;">
+                    <span>รางวัล: เหรียญทอง ลองชนะเลิศอันดับที่ 3การแข่งขันสร้างWeb Applications ศิลปหัตกรรมนักเรียน ครั้งที่71</span>
+                </div>
+            </div>
+
+            <!-- 4-6 -->
+            <div class="colum4-6">
+                <div class="colum4">
+                    <img src="assets/certificateALL/4_YiDC_Thitisak_Wantha.png" alt="4_YiDC_Thitisak_Wantha"
+                        style="width: 310px; height: 210px;">
+                    <span>YiDC</span>
+                </div>
+                <div class="colum5">
+                    <img src="assets/certificateALL/5_ios_Thitisak_Wantha.png" alt="5_KMITL"
+                        style="width: 310px; height: 210px;">
+                    <span>ได้รับคัดเลือกอบรม Swift Coding Club TH ที่จุฬาลงกรณ์มหาวิทยาลัย</span>
+                </div>
+                <div class="colum6">
+                    <img src="assets/certificateALL/6_KMITL.png" alt="6_Nvidia" style="width: 310px; height: 210px;">
+                    <span>ได้รับคัดเลือกอบรม KMITL Future Innovator ที่ สถานบันดทคโนโลยีพระจอมเกล้าเจ้าคุณหารลาดกระบัง</span>
+                </div>
+            </div>
+
+            <!-- 7-9 -->
+            <div class="colum4-6">
+                <div class="colum4">
+                    <img src="assets/certificateALL/7_วิชาการระดับยอดเยี่ยม.png" alt="4_YiDC_Thitisak_Wantha"
+                        style="width: 310px; height: 210px;">
+                    <span>ได้รับเชิตชูเกียรติ ด้านวิชาการ ระดับยอดเยี่ยม ในงานวันเกียรติยศ ประจำปี2565</span>
+                </div>
+                <div class="colum5">
+                    <img src="assets/certificateALL/8_วิชาการระดับดีเด่น.png" alt="5_KMITL"
+                        style="width: 310px; height: 210px;">
+                    <span>ได้รับเชิตชูเกียรติ ด้านวิชาการ ระดับดีเด่น ในงานวันเกียรติยศ ประจำปี2566</span>
+                </div>
+                <div class="colum6">
+                    <img src="assets/certificateALL/9_คนดีkp308.png" alt="6_Nvidia"
+                        style="width: 310px; height: 210px;">
+                    <span>เป็นนักเรียน คนดีศรีคณะราษฎร์ คนงามตามระเบียบ ในงานวันเกียรติยศ ประจำปี2565</span>
+                </div>
+            </div>
         </div>
-    
-        <div class="section" id="activity">
-            <h2>ACTIVITY</h2>
-            <p>เนื้อหาเกี่ยวกับ Activity...</p>
+
+        <!-- 10-12 -->
+        <div class="colum4-6">
+            <div class="colum4">
+                <img src="assets/certificateALL/10_คนดีkp504.png" alt="4_YiDC_Thitisak_Wantha"
+                    style="width: 310px; height: 210px;">
+                <span>เป็นนักเรียน คนดีศรีคณะราษฎร์ คนงามตามระเบียบ ในงานวันเกียรติยศ ประจำปี2567</span>
+            </div>
+            <div class="colum5">
+                <img src="assets/certificateALL/11_basicIOS-borntodev.png " alt="5_KMITL"
+                    style="width: 310px; height: 210px;">
+                <span>ผ่านการอบรบจาก borntodev school ในคอร์ส Basics iOS Development with Swift</span>
+            </div>
+            <div class="colum6">
+                <img src="assets/certificateALL/12_SQL-borntodev.png" alt="6_Nvidia"
+                    style="width: 310px; height: 210px;">
+                <span>ผ่านการอบรบจาก borntodev school ในคอร์ส Essential SQL for Everyone</span>
+            </div>
         </div>
-    
-        <div class="section" id="certificate">
-            <h2>CERTIFICATE</h2>
-            <p>เนื้อหาเกี่ยวกับ Certificate...</p>
+
+        <!-- 13-15 -->
+        <div class="colum4-6">
+            <div class="colum4">
+                <img src="assets/certificateALL/13_GitHub-borntodev.png" alt="4_YiDC_Thitisak_Wantha"
+                    style="width: 310px; height: 210px;">
+                <span>ผ่านการอบรบจาก borntodev school ในคอร์ส Github for Developer</span>
+            </div>
+            <div class="colum5">
+                <img src="assets/certificateALL/14_Nvidia.png" alt="5_KMITL" style="width: 310px; height: 210px;">
+                <span>ผ่านการอบรบจาก NVIDIA Academy ในโครงการ AI for All: From Basics to GenAI Practice</span>
+            </div>
+            <div class="colum6">
+                <img src="assets/certificateALL/15_CodeMU.jpg" alt="6_Nvidia" style="width: 310px; height: 210px;">
+                <span>ผ่านการอบรบจาก Mahidol MOOC ในคอร์ส การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน</span>
+            </div>
         </div>
+
+        <!-- 16-18 -->
+        <div class="colum4-6">
+            <div class="colum4">
+                <img src="assets/certificateALL/16-SUT-ENG.png" alt="4_YiDC_Thitisak_Wantha"
+                    style="width: 310px; height: 210px;">
+                <span>ผ่านการอบรบจาก ARTIFICIAL INTELLIGENCE ในโครงการ SUT PRE-ENGINEERING COURSE</span>
+            </div>
+            <div class="colum5">
+                <img src="assets/certificateALL/17-ออกแบบเสื้อกีฬาสี.png " alt="5_KMITL"
+                    style="width: 310px; height: 210px;">
+                <span>ชนะการแข่งขันออกแบบเสื้อกีฬาสี ประจำปี 2566</span>
+            </div>
+            <div class="colum6">
+                <img src="assets/certificateALL/18-ออกแบบเสื้อกีฬาสีคุณครู.PNG" alt="6_Nvidia"
+                    style="width: 310px; height: 210px;">
+                <span>ชนะการแข่งขันออกแบบเสื้อกีฬาสีของคุณครู ประจำปี 2567</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <h4>Contact</h4>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>jamewantha51@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/jamesswnn/" target="_blank">
+                        <img src="assets/icon/ig-icon.svg" alt="Instagram-icon" style="width: 30px;">
+                    </a>
+                    <a href="https://github.com/jamesswnn" target="_blank">
+                        <img src="assets/icon/github.svg" alt="github" style="width: 28px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll(".navbar ul li a").forEach(anchor => {
-                anchor.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    let targetClass = this.textContent.trim().toLowerCase(); // แปลงข้อความใน <a> เป็นตัวพิมพ์เล็ก
-                    let targetSection = document.querySelector("." + targetClass);
-                    if (targetSection) {
-                        targetSection.scrollIntoView({ behavior: "smooth" });
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="js/navbar.js"></script>
 
 </body>
+
 </html>
