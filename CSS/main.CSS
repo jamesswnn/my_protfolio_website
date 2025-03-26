@@ -539,20 +539,42 @@ a.more-button:hover {
 }
 
 /* Responsive Design for smaller screens */
+/* สำหรับหน้าจอขนาดกลาง (iPad แนวตั้ง หรือหน้าจอที่กว้างไม่เกิน 1024px) */
+@media (max-width: 1024px) {
+    .certificate .colum1-3, 
+    .certificate .colum4-6 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* แสดง 2 คอลัมน์ต่อแถว */
+        gap: 40px;
+    }
+
+    .certificate .colum1, .certificate .colum2 {
+        order: 1;
+    }
+
+    .certificate .colum3, .certificate .colum4 {
+        order: 2;
+    }
+
+    .certificate .colum5, .certificate .colum6 {
+        order: 3;
+    }
+}
+
+/* สำหรับหน้าจอเล็ก (มือถือ, กว้างไม่เกิน 768px) */
 @media (max-width: 768px) {
-    .colum1-3, .colum4-6 {
-        flex-direction: column; /* เปลี่ยนการจัดเรียงจากแถวเป็นแนวตั้ง */
-        gap: 20px; /* ลดช่องว่างระหว่างคอลัมน์ */
+    .certificate .colum1-3, 
+    .certificate .colum4-6 {
+        display: flex;
+        flex-direction: column; /* เรียงลงแนวตั้ง */
+        align-items: center; /* จัดกึ่งกลาง */
+        gap: 20px; /* ลดช่องว่าง */
     }
 
-    .colum1, .colum2, .colum3, .colum4, .colum5, .colum6 {
-        width: 100%; /* ให้แต่ละคอลัมน์ขยายเต็มหน้าจอ */
-    }
-
-    .colum1 img, .colum2 img, .colum3 img,
-    .colum4 img, .colum5 img, .colum6 img {
-        width: 90%; /* ลดขนาดของภาพลงเล็กน้อย */
-        height: auto; /* ปรับความสูงให้สัมพันธ์กับความกว้าง */
+    .certificate .colum1, .certificate .colum2, 
+    .certificate .colum3, .certificate .colum4, 
+    .certificate .colum5, .certificate .colum6 {
+        width: 100%; /* ขยายเต็มหน้าจอ */
     }
 }
 
