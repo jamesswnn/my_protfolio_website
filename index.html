@@ -14,6 +14,7 @@
         <!-- navbar -->
         <div class="tap-menu">
             <div class="navbar">
+                <button class="menu-toggle">&#9776;</button> <!-- ปุ่ม ☰ -->
                 <ul>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Activity</a></li>
@@ -34,9 +35,9 @@
                 </div>                
                 <!-- about me -->
                 <div class="aboutMe">
-                    <span>ผมเป็นเด็กนักเรียนม.ปลายที่มีความหลงใหลในเทคโนโลยีและคอมพิวเตอร์ตั้งแต่ตอนเด็ก <br>
-                        ได้ลองทำงานในหลากหลายด้านทั้ง Front-End Developer, iOS Developer, Graphic Design <br>
-                        และ IT Supportจนค้นพบความชอบและเส้นทางในแต่ละสาขาอย่างลึกซึ้ง</span>
+                    <span>ผมเป็นเด็กนักเรียนม.ปลายที่มีความหลงใหลในเทคโนโลยีและคอมพิวเตอร์ตั้งแต่ตอนเด็ก<br> 
+                        ได้ลองทำงานในหลากหลายด้านทั้ง Front-End Developer, iOS Developer, <br>
+                        Graphic Design และ IT Supportจนค้นพบความชอบและเส้นทางในแต่ละสาขาอย่างลึกซึ้ง<br></span>
                 </div>
                 <div class="experience">
                     <h4>EXPERIENCE WITH</h4>
@@ -220,6 +221,11 @@
         </div>
     </div>
 
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".navbar ul").classList.toggle("show");
+        });
+    </script>
 
 </body>
 
