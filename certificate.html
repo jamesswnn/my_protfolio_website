@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth; /* ทำให้การเลื่อนเป็นแบบ Smooth */
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        background: #333;
+        padding: 10px;
+    }
+    .navbar ul li {
+        display: inline;
+    }
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+    .section {
+        padding: 50px;
+        height: 500px;
+        border-bottom: 1px solid #ccc;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="tap-menu">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#activity">Activity</a></li>
+                    <li><a href="#certificate">Certificate</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Sections -->
+        <div class="section" id="projects">
+            <h2>PROJECTS</h2>
+            <p>เนื้อหาเกี่ยวกับ Projects...</p>
+        </div>
+    
+        <div class="section" id="activity">
+            <h2>ACTIVITY</h2>
+            <p>เนื้อหาเกี่ยวกับ Activity...</p>
+        </div>
+    
+        <div class="section" id="certificate">
+            <h2>CERTIFICATE</h2>
+            <p>เนื้อหาเกี่ยวกับ Certificate...</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".navbar ul li a").forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    let targetClass = this.textContent.trim().toLowerCase(); // แปลงข้อความใน <a> เป็นตัวพิมพ์เล็ก
+                    let targetSection = document.querySelector("." + targetClass);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

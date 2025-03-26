@@ -1,0 +1,731 @@
+
+@font-face {
+    font-family: 'Line1';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Th.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Th.woff') format('woff');
+    font-weight: 100;/* thin */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line2';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Rg.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Rg.woff') format('woff');
+    font-weight: 400; /* regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line3';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Bd.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Bd.woff') format('woff');
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line4';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_XBd.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_XBd.woff') format('woff');
+    font-weight: 800; /* ectrxbold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line5';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_He.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_He.woff') format('woff');
+    font-weight: 900;  /* heavy */
+    font-style: normal;
+}
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Plus jakarta Sans */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #161513;
+}
+
+/* NAVBAR */
+.tap-menu {
+    background-color: #222222;  /* พื้นหลังnavbar */
+    padding: 28px 150px; /* เว้นระยะขอบบนและล่าง */
+    border: 1px so/*  */lid red;
+    margin-bottom: 110px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    border: 1px so/*  */lid red;
+}
+
+.navbar ul {
+    list-style-type: none; /* เอาจุดดานหน้าออก */
+    margin: 0; /* ลบระยพห่างบนล่าง */
+    padding: 0; /* ลบช่องว่างในกรอบ */
+    display: flex; /* จัดเรียงแถวแนวนอน */
+    border: 1px sol/*  */id red;
+}
+  
+.navbar ul li {
+    margin: 0 15px; /* กำหนดระยะห่างระหว่างแต่ละเมนู */
+}
+
+.navbar ul li {
+    margin: 0 15px; /* กำหนดระยะห่างระหว่างแต่ละเมนู */
+}
+
+.navbar ul li a {
+    text-decoration: none;/* ลบunderline */
+    color: #ffffff;
+    font-family: 'Plus jakarta Sans', sans-serif ;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: 0.2s;
+}
+.navbar ul li a:hover {
+    color: #424242; /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+}
+
+/* HEADER */
+.header {
+    border: 1px so/*  */lid red;
+}
+
+/* avatar */
+.header img.avatar {
+    display: flex;
+    margin: auto;
+    margin-bottom: 28px;
+    justify-content: center;
+    border: 1px so/*  */lid red;
+}
+
+
+/* title */
+.title {
+    display: flex;
+    flex-direction: column; /* จัดเรียงข้อความในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    margin-bottom: 37px;
+    border: 1px so/*  */lid red;
+}
+.title h1 {
+    margin: 0px 0; /* ปรับระยะห่างของแต่ละบรรทัด */
+    color: white; /* สีข้อความ */
+    font-size: 40px; /* ปรับขนาดตัวอักษร */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    border: 1px sol/*  */id red;   
+}
+.gradient-text-title {
+    background: linear-gradient(90deg, #00FF80, #5BADFF); /* กำหนดสีไล่ระดับ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ทำให้ข้อความเป็นสี Gradient */
+}
+
+
+/* about me */
+.aboutMe {
+    display: flex;
+    flex-direction: column; /* จัดเรียงข้อความในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    margin-bottom: 115px;
+    border: 1px so/*  */lid red;
+}
+.aboutMe span {
+    margin: 5px 0; /* ปรับระยะห่างของแต่ละบรรทัด */
+    color: #C5C5C5;
+    font-family: 'Line2', sans-serif;
+    font-size: 16px;
+}
+
+/* experience */
+.experience {
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px sol/*  */id red;
+}
+.experience h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #C5C5C5;
+    font-family: 'Line2', sans-serif;
+    font-weight: bold;
+    margin-bottom: 45px;
+    border: 1px soli/*  */d red;
+}
+.experience img {
+    display: inline-block;
+    width: 50px; 
+    height: auto;
+    margin: 0 14px;
+    vertical-align: middle; /* จัดให้ไอคอนอยู่ตรงกลางแนวตั้ง */
+    border: 1px so/*  */lid red;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 65px;
+}
+.experience img:hover {
+    transform: scale(1.2); /* ขยายไอคอนเมื่อ hover */
+}
+
+
+/* PROJECT */
+.project {
+    text-align: center; /* จัดข้อความทั้งหมดใน project ให้ชิดซ้าย */
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.project h3.gradient-text-project{
+    background: linear-gradient(180deg, #FF8660, #D5491D); /* กำหนดสีไล่ระดับ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ทำให้ข้อความเป็นสี Gradient */
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block; /* สำคัญ! ช่วยให้ Gradient แสดงผล */
+    text-align: center; /* จัดข้อความใน h3 ให้กึ่งกลาง */
+    margin-bottom: 40px;
+}
+
+.project-grid h4 {
+    text-align: left;
+}
+
+/* ใช้ Grid Layout ให้มี 2 คอลัมน์ */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ต่อบรรทัด */
+    gap: 20px; /* ระยะห่างระหว่างการ์ด */
+    justify-content: center;
+    align-items: center;
+    max-width: 900px; /* จำกัดความกว้างเพื่อไม่ให้ยืดจนเกินไป */
+    margin: auto;
+    padding: 0 20px; /* เพิ่ม padding ด้านข้างให้การ์ดไม่ชนขอบ */
+}
+
+
+.project a {
+    display: flex;
+    flex-direction: column;
+    background: #1e1e1e;
+    border-radius: 18px; /* ปรับมุมเรเดี่ยนให้แค่ด้านบน */
+    padding: 0; /* ลบ padding ออกจากการ์ด */
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    padding-bottom: 40px;
+    margin-bottom: 8px;
+    border: 1px sol/*  */id red;
+}
+
+.project a:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+}
+
+.project a img:first-child {
+    width: 100%;
+    height: auto; /* ให้รูปไม่เบียดเกินขอบ */
+    border-radius: 10px 10px 0 0; /* ให้มุมภาพเป็นมนแค่ด้านบน */
+}
+
+.project a .title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* จัดข้อความให้อยู่ทางซ้าย */
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0 10px; /* เพิ่ม padding ซ้ายขวา */
+}
+
+.project a .title-container h4 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 600;
+    flex-grow: 1;
+}
+
+.project a .title-container span {
+    font-size: 14px;
+    margin-right: -20px; /* จัดให้ข้อความ CLICK HERE TO VISIT อยู่ทางซ้าย */
+}
+
+/* Responsive: ถ้าหน้าจอเล็กกว่า 768px ให้แสดงผลเป็น 1 คอลัมน์ */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/* ACTIVITY */
+.Activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive for Activity (Mobile & Tablet) */
+@media (max-width: 768px) {
+    .activity-1, .activity-2, .activity-3 {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .img-avtivity-1, .img-avtivity-2, .img-avtivity-3 {
+        margin-bottom: 20px;
+    }
+
+    .info {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+.Activity h3.gradient-text-activity {
+    background: linear-gradient(180deg, #1976D2, #5BADFF); /* กำหนดสีไล่ระดับ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ทำให้ข้อความเป็นสี Gradient */
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px so/*  */lid red;
+}
+
+/* Activity 1 */
+.img-avtivity-1 img.avt {
+    width: 250px;
+    height: 170px;
+    border: 1px sol/*  */id red;
+}
+ .img-Agency-1 img {  
+    display: inline-block; 
+    height: auto;
+    margin: 0 8px;
+    border: 1px so/*  */lid red;
+}
+
+.activity-1 {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px sol/*  */id red;
+    padding: 0 30px;
+}
+
+.info {
+    padding-bottom: 90px;
+    margin: 10px;
+    border: 1px so/*  */lid red;
+
+}
+
+.info h4 {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+.info span {
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    font-size: 18px;
+}
+
+
+
+/* Activity 2 */
+.img-avtivity-2 img.avt {
+    width: 250px;
+    height: 170px;
+    border: 1px sol/*  */id red;
+}
+ .img-Agency-2 img {  
+    display: inline-block; 
+    height: auto;
+    margin: 0 8px;
+    border: 1px so/*  */lid red;
+}
+
+.activity-2 {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px sol/*  */id red;
+    padding: 0 30px;
+}
+
+.info {
+    padding-bottom: 90px;
+    margin: 10px;
+    border: 1px so/*  */lid red;
+
+}
+
+.info h4 {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+.info span {
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    font-size: 18px;
+}
+
+
+
+/* Activity 3 */
+.img-avtivity-3 img.avt {
+    width: 250px;
+    height: 170px;
+    margin-right: 10px;
+    border: 1px sol/*  */id red;
+}
+ .img-Agency-3 img {  
+    display: inline-block; 
+    height: auto;
+    margin: 0 8px;
+    border: 1px so/*  */lid red;
+}
+
+.activity-3 {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px sol/*  */id red;
+    padding: 0 30px;
+}
+
+.info {
+    padding-bottom: 90px;
+    margin: 10px;
+    border: 1px so/*  */lid red;
+
+}
+
+.info h4 {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+.info span {
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    font-size: 18px;
+}
+
+
+
+/* More-Button*/
+a.more-button {
+    border: 1px so/*  */lid red;
+    display: inline-block;
+    font-family: 'Line3', sans-serif;
+    background-color: white;
+    color: #161513;
+    padding: 15px 50px; /* เพิ่มขนาดของปุ่ม */
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+    border-radius: 80px; /* มุมมน */
+    transition: background-color 0.3s, transform 0.2s; /* ทำเอฟเฟกต์ */
+}
+
+a.more-button:hover {
+    background-color: #424242; /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+}
+
+
+
+
+
+/* CERTIFICATE */
+.certificate {
+    text-align: center; /* จัดเนื้อหากึ่งกลาง */
+}
+
+.certificate h3.gradient-text-certificate {
+    background: linear-gradient(180deg, #00FF80, #00773C); /* กำหนดสีไล่ระดับ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ทำให้ข้อความเป็นสี Gradient */
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 45px;
+    border: 1px so/*  */lid red;
+}
+
+.colum1-3, .colum4-6 {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
+    margin-bottom: 30px; /* เว้นระยะระหว่างแถว */
+    border: 1px so/*  */lid red;
+}
+
+.colum1, .colum2, .colum3,
+.colum4, .colum5, .colum6 {
+    display: flex;
+    flex-direction: column; /* จัดให้องค์ประกอบอยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลาง */
+    text-align: center;
+    width: 250px; /* กำหนดความกว้างให้เท่ากัน */
+    transition: 0.3s ease-in-out;
+}
+
+.colum1 img, .colum2 img, .colum3 img,
+.colum4 img, .colum5 img, .colum6 img {
+    width: 250px;
+    height: 170px;
+    border-radius: 8px; /* ทำให้มุมโค้งเล็กน้อย */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูสวยขึ้น */
+    border:  1px sol/*  */id red;
+}
+
+.colum1:hover , .colum2:hover , .colum3:hover ,
+.colum4:hover , .colum5:hover , .colum6:hover  {
+    transform: scale(1.05); /* ขยายรูปขึ้นเล็กน้อย */
+    transition: transform 0.3s ease-in-out;
+}
+
+.colum1 span, .colum2 span, .colum3 span,
+.colum4 span, .colum5 span, .colum6 span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    border: 1px sol/*  */id red;
+    transition: 0.3s ease-in-out;
+}
+
+.colum1:hover span, .colum2:hover span, .colum3:hover span,
+.colum4:hover span, .colum5:hover span, .colum6:hover span {
+    color: white; /* เปลี่ยนสีฟอนต์เป็นสีขาวเมื่อ hover */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .colum1-3, .colum4-6 {
+        flex-direction: column; /* เปลี่ยนการจัดเรียงจากแถวเป็นแนวตั้ง */
+        gap: 20px; /* ลดช่องว่างระหว่างคอลัมน์ */
+    }
+
+    .colum1, .colum2, .colum3, .colum4, .colum5, .colum6 {
+        width: 100%; /* ให้แต่ละคอลัมน์ขยายเต็มหน้าจอ */
+    }
+
+    .colum1 img, .colum2 img, .colum3 img,
+    .colum4 img, .colum5 img, .colum6 img {
+        width: 90%; /* ลดขนาดของภาพลงเล็กน้อย */
+        height: auto; /* ปรับความสูงให้สัมพันธ์กับความกว้าง */
+    }
+}
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #191919; /* สีพื้นหลังเข้ม */
+    color: white;
+    text-align: left; /* จัดข้อความชิดซ้าย */
+    justify-content: left;
+    padding: 20px; /* ใช้ padding เล็กน้อย */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 65px;
+    border: 1px sol/*  */id red; /* ลบออกถ้าไม่จำเป็น */
+}
+
+.footer-content {
+    max-width: 600px; /* จำกัดความกว้างของ footer-content */
+    margin: 0 auto;  /* จัดให้อยู่กึ่งกลางของหน้าจอ */
+}
+
+.footer-content h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-content .social-icons {
+    display: flex;
+    justify-content: flex-start; /* จัดไอคอนชิดซ้าย */
+    gap: 15px; /* ระยะห่างระหว่างไอคอน */
+}
+
+.footer-content .social-icons a img {
+    width: 35px;
+    filter: brightness(0) invert(1); /* เปลี่ยน SVG เป็นสีขาว */
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+
+.footer-content .social-icons a:hover img {
+    transform: scale(1.05); /* ขยายไอคอนเล็กน้อยเมื่อ hover */
+    opacity: 0.8;
+}
+
+/* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 768px */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 30px; /* เพิ่ม padding ด้านข้างเมื่อหน้าจอเล็ก */
+    }
+
+    .footer-content {
+        padding: 0 15px; /* เพิ่ม padding ซ้ายขวา */
+    }
+
+    .footer-content h4 {
+        font-size: 18px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
+    }
+
+    .footer-content p {
+        font-size: 14px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
+    }
+
+    .footer-content .social-icons {
+        justify-content: center; /* จัดไอคอนให้อยู่กลาง */
+        gap: 10px;
+    }
+
+    .footer-content .social-icons a img {
+        width: 30px; /* ลดขนาดไอคอนลง */
+    }
+}
+
+/* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 480px */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 15px; /* เพิ่ม padding ด้านข้างในมือถือที่เล็กมาก */
+    }
+
+    .footer-content h4 {
+        font-size: 16px; /* ลดขนาด font ให้พอเหมาะ */
+    }
+
+    .footer-content p {
+        font-size: 14px; /* ลดขนาด font ให้พอเหมาะ */
+    }
+
+    .footer-content .social-icons {
+        justify-content: space-evenly; /* จัดไอคอนให้กระจายห่างๆ */
+    }
+
+    .footer-content .social-icons a img {
+        width: 28px; /* ลดขนาดไอคอนลงอีก */
+    }
+}
+
+
+
+/* Responsive Design */
+
+/* สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 1024px) {
+    .tap-menu {
+        padding: 20px 50px;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .navbar ul li {
+        margin: 0 10px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* ลดเหลือ 1 คอลัมน์ */
+    }
+    .title h1 {
+        font-size: 32px;
+    }
+}
+
+/* สำหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media (max-width: 768px) {
+    .tap-menu {
+        padding: 15px 30px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    .title h1 {
+        font-size: 24px;
+    }
+    .aboutMe span {
+        font-size: 14px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* แสดงโปรเจคทีละ 1 อัน */
+        gap: 10px;
+    }
+    .experience img {
+        width: 40px;
+        margin: 0 8px;
+    }
+}
+
+/* สำหรับหน้าจอขนาดเล็กมาก (มือถือจอเล็ก) */
+@media (max-width: 480px) {
+    .tap-menu {
+        padding: 10px 15px;
+    }
+    .title h1 {
+        font-size: 20px;
+    }
+    .aboutMe span {
+        font-size: 12px;
+    }
+    .project-grid {
+        gap: 5px;
+    }
+    .experience img {
+        width: 30px;
+        margin: 0 5px;
+    }
+}
+
