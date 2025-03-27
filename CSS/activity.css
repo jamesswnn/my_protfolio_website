@@ -1,0 +1,566 @@
+
+@font-face {
+    font-family: 'Line1';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Th.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Th.woff') format('woff');
+    font-weight: 100;/* thin */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line2';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Rg.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Rg.woff') format('woff');
+    font-weight: 400; /* regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line3';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Bd.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Bd.woff') format('woff');
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line4';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_XBd.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_XBd.woff') format('woff');
+    font-weight: 800; /* ectrxbold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line5';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_He.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_He.woff') format('woff');
+    font-weight: 900;  /* heavy */
+    font-style: normal;
+}
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Plus jakarta Sans */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #161513;
+}
+
+
+/* NAVBAR */
+.tap-menu {
+    background-color: #191919;  /* พื้นหลังnavbar */
+    padding: 28px 40px; /* เว้นระยะขอบบนและล่าง */
+    border: 1px so/*  */lid red;
+    margin-bottom: 110px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right; /* กระจายระหว่างโลโก้และเมนู */
+    align-items: center;
+    border: 1px so/*  */lid red;
+}
+
+.navbar ul {
+    list-style-type: none; /* เอาจุดดานหน้าออก */
+    margin: 0; /* ลบระยพห่างบนล่าง */
+    padding: 0; /* ลบช่องว่างในกรอบ */
+    display: flex; /* จัดเรียงแถวแนวนอน */
+    border: 1px sol/*  */id red;
+}
+  
+.navbar ul li {
+    margin: 0 15px; /* กำหนดระยะห่างระหว่างแต่ละเมนู */
+}
+
+.navbar ul li a {
+    text-decoration: none;/* ลบunderline */
+    color: #ffffff;
+    font-family: 'Plus jakarta Sans', sans-serif ;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: 0.2s;
+}
+.navbar ul li a:hover {
+    color: #424242; /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+}
+
+/* 🔹 เมนูมือถือ (ซ่อนไว้ก่อน) */
+/* ปรับตำแหน่งปุ่มเมนู ☰ */
+.menu-toggle {
+    display: none; /* ซ่อนไว้บนจอใหญ่ */
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    margin-right: 20px; /* ขยับปุ่มเข้ามาจากขอบ */
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between; /* เมนูอยู่ซ้าย-ขวา */
+        padding: 0 20px; /* เพิ่ม padding ขอบซ้าย-ขวา */
+    }
+
+    .menu-toggle {
+        display: block; /* แสดงเมนูปุ่ม ☰ */
+        margin-right: -350px; /* เว้นขอบขวาเพิ่มขึ้น */
+    }
+
+    .navbar ul {
+        visibility: hidden; /* ซ่อนเมนูไว้ */
+        opacity: 0; /* เริ่มต้นที่โปร่งใส */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #161616;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-20px); /* เลื่อนขึ้นจากด้านล่าง */
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0s linear 0.3s; /* เพิ่ม transition */
+    }
+
+    .navbar ul.show {
+        visibility: visible; /* แสดงเมนู */
+        opacity: 1; /* ทำให้โปร่งใส */
+        transform: translateY(0); /* เลื่อนกลับที่ตำแหน่งเดิม */
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* ทำให้แสดงทันที */
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 12px;
+    }
+}
+
+
+/* ACTIVITY */
+.Activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive for Activity (Mobile & Tablet) */
+@media (max-width: 768px) {
+    .activity-1, .activity-2, .activity-3 {
+        flex-direction: column; /* เรียงแนวตั้ง */
+        align-items: center;
+        gap: 20px; /* ปรับระยะห่าง */
+        width: 100%; /* ให้ขยายเต็มจอ */
+    }
+
+    .img-avtivity-1 img.avt, 
+    .img-avtivity-2 img.avt, 
+    .img-avtivity-3 img.avt {
+        width: 90%; /* ลดขนาดรูปลงเล็กน้อย */
+        height: auto; /* ปรับให้ความสูงสัมพันธ์ */
+    }
+
+    .info {
+        text-align: center;
+        width: 90%; /* ให้เนื้อหากว้างขึ้นในจอเล็ก */
+        padding: 10px;
+    }
+}
+
+.Activity h3.gradient-text-activity {
+    background: linear-gradient(180deg, #1976D2, #5BADFF); /* กำหนดสีไล่ระดับ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ทำให้ข้อความเป็นสี Gradient */
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px so/*  */lid red;
+}
+
+/* Activity 1 */
+
+.img-avtivity-1 img.avt {
+    width: 250px;
+    height: 170px;
+    border: 1px sol/*  */id red;
+}
+ .img-Agency-1 img {  
+    display: inline-block; 
+    height: auto;
+    margin: 0 8px;
+    border: 1px so/*  */lid red;
+}
+
+.activity-1 {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px sol/*  */id red;
+}
+
+.info {
+    padding-bottom: 90px;
+    margin: 10px;
+    border: 1px so/*  */lid red;
+
+}
+
+.info h4 {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+.info span {
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    font-size: 18px;
+}
+
+
+/* Activity 2 */
+.img-avtivity-2 img.avt {
+    width: 120px;
+    height: 120px;
+    border: 1px sol/*  */id red;
+}
+ .img-Agency-2 img {  
+    display: inline-block; 
+    height: auto;
+    margin: 0 8px;
+    border: 1px so/*  */lid red;
+}
+
+.activity-2 {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px so/*  */lid red;
+}
+
+.caption a {
+    display: block;
+    margin-top: 5px;
+    font-family: 'Line2', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.info-2 {
+    padding-bottom: 20px;
+    margin: 10px;
+    border: 1px sol/*  */id red;
+}
+
+.info-2 h4 {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+.info-2 span {
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    font-size: 18px;
+    border: 1px s/*  */olid red;
+
+}
+
+
+.info-2 {
+    margin: 10px;
+    border: 1px sol/*  */id red;
+
+}
+
+.info h4 {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+.info span {
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    font-size: 18px;
+}
+
+.wankeartiyod {
+    font-family: 'Line3', sans-serif;
+    font-size: 22px;
+}
+
+/* colum-activity */
+.row-colum-3 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
+    border: 1px sol/*  */id red;
+}
+
+
+/* colum-activity */
+.row-colum-2 {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
+    border: 1px sol/*  */id red;
+}
+
+/* colum-activity */
+.row-colum {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
+    margin-top: 30px;
+    margin-bottom: 30px; /* เว้นระยะระหว่างแถว */
+    border: 1px sol/*  */id red;
+}
+
+.colum1, .colum2, .colum3 {
+    display: flex;
+    flex-direction: column; /* จัดให้องค์ประกอบอยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลาง */
+    text-align: center;
+    width: 250px; /* กำหนดความกว้างให้เท่ากัน */
+    transition: 0.3s ease-in-out;
+}
+
+.colum1 img, .colum2 img, .colum3 img {
+    width: 250px;
+    height: 170px;
+    border-radius: 8px; /* ทำให้มุมโค้งเล็กน้อย */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูสวยขึ้น */
+    border:  1px sol/*  */id red;
+}
+
+.colum1 span, .colum2 span, .colum3 span {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    border: 1px sol/*  */id red;
+    transition: 0.3s ease-in-out;
+}
+
+img.avtcc {
+    margin-top: 10px;
+    width: 100px; 
+    height: 100px;
+    border: 1px sol/*  */id red;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .row-colum, .row-colum-3 {
+        flex-direction: column; /* เปลี่ยนการจัดเรียงจากแถวเป็นแนวตั้ง */
+        gap: 20px; /* ลดช่องว่างระหว่างคอลัมน์ */
+    }
+
+    .colum1, .colum2, .colum3 {
+        width: 100%; /* ให้แต่ละคอลัมน์ขยายเต็มหน้าจอ */
+    }
+
+    .colum1 img, .colum2 img, .colum3 img {
+        width: 80%; /* ลดขนาดของภาพลงเล็กน้อย */
+        height: auto; /* ปรับความสูงให้สัมพันธ์กับความกว้าง */
+    }
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #191919; /* สีพื้นหลังเข้ม */
+    color: white;
+    text-align: left; /* จัดข้อความชิดซ้าย */
+    justify-content: left;
+    padding: 20px; /* ใช้ padding เล็กน้อย */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+    border: 1px sol/*  */id red; /* ลบออกถ้าไม่จำเป็น */
+}
+
+.footer-content {
+    max-width: 600px; /* จำกัดความกว้างของ footer-content */
+    margin: 0 auto;  /* จัดให้อยู่กึ่งกลางของหน้าจอ */
+}
+
+.footer-content h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-content .social-icons {
+    display: flex;
+    justify-content: flex-start; /* จัดไอคอนชิดซ้าย */
+    gap: 15px; /* ระยะห่างระหว่างไอคอน */
+}
+
+.footer-content .social-icons a img {
+    width: 35px;
+    filter: brightness(0) invert(1); /* เปลี่ยน SVG เป็นสีขาว */
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+
+.footer-content .social-icons a:hover img {
+    transform: scale(1.05); /* ขยายไอคอนเล็กน้อยเมื่อ hover */
+    opacity: 0.8;
+}
+
+/* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 768px */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 30px; /* เพิ่ม padding ด้านข้างเมื่อหน้าจอเล็ก */
+    }
+
+    .footer-content {
+        padding: 0 15px; /* เพิ่ม padding ซ้ายขวา */
+    }
+
+    .footer-content h4 {
+        font-size: 18px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
+    }
+
+    .footer-content p {
+        font-size: 14px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
+    }
+
+    .footer-content .social-icons {
+        justify-content: center; /* จัดไอคอนให้อยู่กลาง */
+        gap: 10px;
+    }
+
+    .footer-content .social-icons a img {
+        width: 30px; /* ลดขนาดไอคอนลง */
+    }
+}
+
+/* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 480px */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 15px; /* เพิ่ม padding ด้านข้างในมือถือที่เล็กมาก */
+    }
+
+    .footer-content h4 {
+        font-size: 16px; /* ลดขนาด font ให้พอเหมาะ */
+    }
+
+    .footer-content p {
+        font-size: 14px; /* ลดขนาด font ให้พอเหมาะ */
+    }
+
+    .footer-content .social-icons {
+        justify-content: space-evenly; /* จัดไอคอนให้กระจายห่างๆ */
+    }
+
+    .footer-content .social-icons a img {
+        width: 28px; /* ลดขนาดไอคอนลงอีก */
+    }
+}
+
+
+
+/* Responsive Design */
+
+/* สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 1024px) {
+    .tap-menu {
+        padding: 20px 50px;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .navbar ul li {
+        margin: 0 10px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* ลดเหลือ 1 คอลัมน์ */
+    }
+    .title h1 {
+        font-size: 32px;
+    }
+}
+
+/* สำหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media (max-width: 768px) {
+    .tap-menu {
+        padding: 15px 30px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    .title h1 {
+        font-size: 24px;
+    }
+    .aboutMe span {
+        font-size: 14px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr; /* แสดงโปรเจคทีละ 1 อัน */
+        gap: 10px;
+    }
+    .experience img {
+        width: 40px;
+        margin: 0 8px;
+    }
+}
+
+/* สำหรับหน้าจอขนาดเล็กมาก (มือถือจอเล็ก) */
+@media (max-width: 480px) {
+    .tap-menu {
+        padding: 10px 15px;
+    }
+    .title h1 {
+        font-size: 20px;
+    }
+    .aboutMe span {
+        font-size: 12px;
+    }
+    .project-grid {
+        gap: 5px;
+    }
+    .experience img {
+        width: 30px;
+        margin: 0 5px;
+    }
+}
+
+

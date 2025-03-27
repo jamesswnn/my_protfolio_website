@@ -159,10 +159,14 @@ body {
 
 
 /* PROJECT */
+/* ทำให้ทุกอย่างจัดกลางโดยใช้ flex */
 .project {
-    text-align: center; /* จัดข้อความทั้งหมดใน project ให้ชิดซ้าย */
+    text-align: center;
     width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project h3.gradient-text-project{
@@ -177,12 +181,13 @@ body {
     margin-bottom: 40px;
 }
 
+/* ปรับขนาดของ Slider สำหรับมือถือ */
 .slider-container {
-    width: 400px;
-    height: 250px;
+    width: 90%; /* ให้ใช้พื้นที่ตามขนาดหน้าจอ */
+    max-width: 400px;
+    height: auto;
     margin: auto;
     transition: 0.3s ease-in-out;
-    border: 1px soli/*  */d red;
 }
 .slider-container:hover {
     transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
@@ -195,9 +200,10 @@ body {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .title-container {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px 25px;
+    padding: 15px;
     background: #222222;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
@@ -235,11 +241,13 @@ body {
     font-family: 'Line2', sans-serif;
     border: 1px sol/*  */id red;
 }
+
+/* QR Code Section - ทำให้เป็น Column บนมือถือ */
 .qrcode-1 {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
 }
 .qrcode-item {
     text-align: center;
@@ -281,9 +289,9 @@ body {
     font-family: 'Line3', sans-serif;
     background-color: white;
     color: #161513;
-    padding: 3px 20px; /* เพิ่มขนาดของปุ่ม */
-    font-size: 20px;
-    margin-top: 60px;
+    padding: 5px 15px; /* เพิ่มขนาดของปุ่ม */
+    font-size: 18px;
+    margin-top: 40px;
     margin-bottom: 10px;
     text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
     border-radius: 15px; /* มุมมน */
@@ -294,8 +302,6 @@ body {
     background-color: #424242; /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
     transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
 }
-
-
 
 
 
