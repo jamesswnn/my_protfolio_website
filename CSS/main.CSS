@@ -54,7 +54,7 @@ body {
 
 /* NAVBAR */
 .tap-menu {
-    background-color: #222222;  /* พื้นหลังnavbar */
+    background-color: #191919;  /* พื้นหลังnavbar */
     padding: 28px 40px; /* เว้นระยะขอบบนและล่าง */
     border: 1px so/*  */lid red;
     margin-bottom: 110px;
@@ -297,10 +297,12 @@ body {
     transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
 }
 
+
 .project a img:first-child {
-    width: 100%;
-    height: auto; /* ให้รูปไม่เบียดเกินขอบ */
+    width: 440px;
+    height: 265px;
     border-radius: 10px 10px 0 0; /* ให้มุมภาพเป็นมนแค่ด้านบน */
+    border: 1px sol/*  */id red;
 }
 
 .project a .title-container {
@@ -315,7 +317,7 @@ body {
 
 .project a .title-container h4 {
     margin: 0;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 600;
     flex-grow: 1;
 }

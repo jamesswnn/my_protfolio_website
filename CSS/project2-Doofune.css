@@ -1,3 +1,51 @@
+
+@font-face {
+    font-family: 'Line1';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Th.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Th.woff') format('woff');
+    font-weight: 100;/* thin */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line2';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Rg.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Rg.woff') format('woff');
+    font-weight: 400; /* regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line3';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Bd.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Bd.woff') format('woff');
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line4';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_XBd.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_XBd.woff') format('woff');
+    font-weight: 800; /* ectrxbold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Line5';
+    src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_He.woff2') format('woff2'),
+         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_He.woff') format('woff');
+    font-weight: 900;  /* heavy */
+    font-style: normal;
+}
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Plus jakarta Sans */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +59,7 @@ body {
     background-color: #191919;  /* พื้นหลังnavbar */
     padding: 28px 40px; /* เว้นระยะขอบบนและล่าง */
     border: 1px so/*  */lid red;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 
 .navbar {
@@ -108,121 +156,161 @@ body {
 
 
 
-/* CERTIFICATE */
-.certificate {
-    text-align: center; /* จัดเนื้อหากึ่งกลาง */
+/* PROJECT */
+.project {
+    text-align: center; /* จัดข้อความทั้งหมดใน project ให้ชิดซ้าย */
+    width: 100%;
+    margin-bottom: 120px;
 }
 
-.certificate h3.gradient-text-certificate {
-    background: linear-gradient(180deg, #00FF80, #00773C); /* กำหนดสีไล่ระดับ */
+.project h3.gradient-text-project{
+    background: linear-gradient(180deg, #FF8660, #D5491D); /* กำหนดสีไล่ระดับ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; /* ทำให้ข้อความเป็นสี Gradient */
     font-size: 30px;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
-    margin-top: 110px;
-    margin-bottom: 45px;
-    border: 1px so/*  */lid red;
+    display: inline-block; /* สำคัญ! ช่วยให้ Gradient แสดงผล */
+    text-align: center; /* จัดข้อความใน h3 ให้กึ่งกลาง */
+    margin-bottom: 40px;
 }
 
-.row-colum {
-    display: flex;
-    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
-    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
-    margin-bottom: 30px; /* เว้นระยะระหว่างแถว */
-    border: 1px so/*  */lid red;
-}
-
-.colum1, .colum2, .colum3,
-.colum4, .colum5, .colum6,
-.colum7, .colum8, .colum9,
-.colum10, .colum11, .colum12,
-.colum13, .colum14, .colum15,
-.colum16, .colum17, .colum18 {
-    display: flex;
-    flex-direction: column; /* จัดให้องค์ประกอบอยู่ในแนวตั้ง */
-    align-items: center; /* จัดให้อยู่กึ่งกลาง */
-    text-align: center;
-    width: 250px; /* กำหนดความกว้างให้เท่ากัน */
+.slider-container {
+    width: 490px;
+    height: 250px;
+    margin: auto;
     transition: 0.3s ease-in-out;
+    border: 1px soli/*  */d red;
+}
+.slider-container:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
 }
 
-.colum1 img, .colum2 img, .colum3 img,
-.colum4 img, .colum5 img, .colum6 img,
-.colum7 img, .colum8 img, .colum9 img,
-.colum12 img, .colum11 img, .colum12 img, 
-.colum13 img, .colum14 img, .colum15 img,
-.colum16 img, .colum17 img, .colum18 img{
-    width: 250px;
-    height: 170px;
-    border-radius: 8px; /* ทำให้มุมโค้งเล็กน้อย */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูสวยขึ้น */
-    border:  1px sol/*  */id red;
+.slider-container img {
+    width: 490px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px sol/*  */id red;
+}
+.title-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #222222;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px so/*  */lid red;
+}
+.title-container h1 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: 1px sol/*  */id red;
 }
 
-.colum1:hover , .colum2:hover , .colum3:hover ,
-.colum4:hover , .colum5:hover , .colum6:hover ,
-.colum7:hover , .colum8:hover , .colum9:hover ,
-.colum10:hover , .colum11:hover , .colum12:hover ,
-.colum13:hover , .colum14:hover , .colum15:hover ,
-.colum16:hover , .colum17:hover , .colum18:hover {
-    transform: scale(1.05); /* ขยายรูปขึ้นเล็กน้อย */
-    transition: transform 0.3s ease-in-out;
+.title-container span {
+    font-size: 18px;
+    font-family: 'Line2', sans-serif;
+    border: 1px sol/*  */id red;
 }
 
-.colum1 span, .colum2 span, .colum3 span,
-.colum4 span, .colum5 span, .colum6 span,
-.colum7 span, .colum8 span, .colum9 span,
-.colum10 span, .colum11 span, .colum12 span,
-.colum13 span, .colum14 span, .colum15 span,
-.colum16 span, .colum17 span, .colum18 span {
+.title-container h2 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px sol/*  */id red;
+}
+.title-container h2, .title-container h3, .title-container span, .title-container p {
+    margin: 10px 0;
+}
+
+.title-container p {
+    font-size: 18px;
+    font-family: 'Line2', sans-serif;
+    border: 1px sol/*  */id red;
+}
+
+.title-container p u {
+    font-family: 'Line2', sans-serif;
+    border: 1px sol/*  */id red;
+}
+.qrcode-1 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+.qrcode-item {
+    text-align: center;
+}
+.qrcode-item img {
+    width: 110px;
     display: block;
-    margin-top: 10px;
+    margin: auto;
+    border: 1px sol/*  */id red;
+}
+.qrcode-item a{
+    display: block;
+    margin-top: 5px;
     font-size: 16px;
     font-family: 'Line2', sans-serif;
-    color: #8491A0;
-    border: 1px sol/*  */id red;
-    transition: 0.3s ease-in-out;
+    color: white;
 }
-
-.colum1:hover span, .colum2:hover span, .colum3:hover span,
-.colum4:hover span, .colum5:hover span, .colum6:hover span,
-.colum7:hover span, .colum8:hover span, .colum9:hover span,
-.colum10:hover span, .colum11:hover span, .colum12:hover span,
-.colum13:hover span, .colum14:hover span, .colum15:hover span,
-.colum16:hover span, .colum17:hover span, .colum18:hover span {
-    color: white; /* เปลี่ยนสีฟอนต์เป็นสีขาวเมื่อ hover */
-    transition: color 0.3s ease-in-out;
+.qrcode-item-eng a{
+    display: block;
+    font-family: 'Line2', sans-serif;
+    margin-top: 2px;
+    color: white;
+    font-size: 16px;
 }
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-    .row-colum {
-        flex-direction: column; /* เปลี่ยนการจัดเรียงจากแถวเป็นแนวตั้ง */
-        gap: 20px; /* ลดช่องว่างระหว่างคอลัมน์ */
-    }
-
-    .colum1, .colum2, .colum3, 
-    .colum4, .colum5, .colum6, 
-    .colum7, .colum8, .colum9,
-    .colum10, .colum11, .colum12,
-    .colum13, .colum14, .colum15,
-    .colum16, .colum17, .colum18 {
-        width: 100%; /* ให้แต่ละคอลัมน์ขยายเต็มหน้าจอ */
-    }
-
-    .colum1 img, .colum2 img, .colum3 img,
-    .colum4 img, .colum5 img, .colum6 img,
-    .colum7 img, .colum8 img, .colum9 img,
-    .colum10 img, .colum11 img, .colum12 img,
-    .colum13 img, .colum14 img, .colum15 img,
-    .colum16 img, .colum17 img, .colum18 img {
-        width: 80%; /* ลดขนาดของภาพลงเล็กน้อย */
-        height: auto; /* ปรับความสูงให้สัมพันธ์กับความกว้าง */
-    }
+.qrcode-item span {
+    display: block;
+    margin-top: 5px;
+    font-family: 'Line2', sans-serif;
+    color: white;
+    font-size: 16px;
 }
 
 
+
+
+
+
+/* behind-ahead-button*/
+.behind-ahead-button a.behind {
+    border: 1px so/*  */lid red;
+    display: inline-block;
+    font-family: 'Line3', sans-serif;
+    background-color: white;
+    color: #161513;
+    padding: 3px 20px; /* เพิ่มขนาดของปุ่ม */
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+    border-radius: 15px 5px 5px 15px; /* มุมมน */
+    transition: background-color 0.3s, transform 0.2s; /* ทำเอฟเฟกต์ */
+}
+
+.behind-ahead-button a.ahead {
+    border: 1px so/*  */lid red;
+    display: inline-block;
+    font-family: 'Line3', sans-serif;
+    background-color: white;
+    color: #161513;
+    padding: 3px 20px; /* เพิ่มขนาดของปุ่ม */
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+    border-radius: 5px 15px 15px 5px; /* มุมมน */
+    transition: background-color 0.3s, transform 0.2s; /* ทำเอฟเฟกต์ */
+}
+
+.behind-ahead-button a:hover {
+    background-color: #424242; /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+}
 
 /* FOOTER */
 .footer {
