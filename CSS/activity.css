@@ -54,6 +54,18 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* NAVBAR */
 .tap-menu {
     background-color: #191919;  /* พื้นหลังnavbar */
@@ -154,6 +166,265 @@ body {
 }
 
 
+
+
+
+
+
+
+/* CERTIFICATE */
+.colum1-3 {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
+    margin-bottom: 30px; /* เว้นระยะระหว่างแถว */
+    border: 1px so/*  */lid red;
+}
+
+.colum1, .colum2, .colum3{
+    display: flex;
+    flex-direction: column; /* จัดให้องค์ประกอบอยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลาง */
+    text-align: center;
+    width: 250px; /* กำหนดความกว้างให้เท่ากัน */
+    transition: 0.3s ease-in-out;
+}
+
+.colum1 img, .colum2 img, .colum3 img{
+    width: 250px;
+    height: 170px;
+    border-radius: 8px; /* ทำให้มุมโค้งเล็กน้อย */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูสวยขึ้น */
+    border:  1px sol/*  */id red;
+}
+
+.colum1:hover , .colum2:hover , .colum3:hover {
+    transform: scale(1.05); /* ขยายรูปขึ้นเล็กน้อย */
+    transition: transform 0.3s ease-in-out;
+}
+
+.colum1 span, .colum2 span, .colum3 span{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    border: 1px sol/*  */id red;
+    transition: 0.3s ease-in-out;
+}
+
+.colum1:hover span, .colum2:hover span, .colum3:hover span{
+    color: white; /* เปลี่ยนสีฟอนต์เป็นสีขาวเมื่อ hover */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .colum1-3{
+        flex-direction: column; /* เปลี่ยนการจัดเรียงจากแถวเป็นแนวตั้ง */
+        gap: 20px; /* ลดช่องว่างระหว่างคอลัมน์ */
+    }
+
+    .colum1, .colum2, .colum3 {
+        width: 100%; /* ให้แต่ละคอลัมน์ขยายเต็มหน้าจอ */
+    }
+
+    .colum1 img, .colum2 img, .colum3 img{
+        width: 80%; /* ลดขนาดของภาพลงเล็กน้อย */
+        height: auto; /* ปรับความสูงให้สัมพันธ์กับความกว้าง */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CERTIFICATE */
+.colum4-6 {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
+    margin-bottom: 30px; /* เว้นระยะระหว่างแถว */
+    border: 1px so/*  */lid red;
+}
+
+
+.colum4, .colum5, .colum6 {
+    display: flex;
+    flex-direction: column; /* จัดให้องค์ประกอบอยู่ในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลาง */
+    text-align: center;
+    width: 250px; /* กำหนดความกว้างให้เท่ากัน */
+    transition: 0.3s ease-in-out;
+}
+
+.colum4 img, .colum5 img, .colum6 img {
+    width: 250px;
+    height: 170px;
+    border-radius: 8px; /* ทำให้มุมโค้งเล็กน้อย */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูสวยขึ้น */
+    border:  1px sol/*  */id red;
+}
+
+.colum4:hover , .colum5:hover , .colum6:hover  {
+    transform: scale(1.05); /* ขยายรูปขึ้นเล็กน้อย */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .colum4 span, .colum5 span, .colum6 span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    border: 1px solid red;
+    transition: 0.3s ease-in-out;
+} */
+
+
+/* .colum4:hover span, .colum5:hover span, .colum6:hover span {
+    color: white; /* เปลี่ยนสีฟอนต์เป็นสีขาวเมื่อ hover 
+    transition: color 0.3s ease-in-out;
+} 
+*/ 
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .colum4-6 {
+        flex-direction: column; /* เปลี่ยนการจัดเรียงจากแถวเป็นแนวตั้ง */
+        gap: 20px; /* ลดช่องว่างระหว่างคอลัมน์ */
+    }
+
+    .colum4, .colum5, .colum6 {
+        width: 100%; /* ให้แต่ละคอลัมน์ขยายเต็มหน้าจอ */
+    }
+
+    .colum4 img, .colum5 img, .colum6 img {
+        width: 80%; /* ลดขนาดของภาพลงเล็กน้อย */
+        height: auto; /* ปรับความสูงให้สัมพันธ์กับความกว้าง */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Activity 4 */
+ .img-Agency-4 img {  
+    display: inline-block; 
+    height: auto;
+    margin: 0 8px;
+    border: 1px sol/*  */id red;
+}
+
+.activity-4 {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px so/*  */lid red;
+}
+
+.info-4 {
+    padding-bottom: 20px;
+    margin: 10px;
+    border: 1px solA/*  */id red;
+
+}
+
+.info h4 {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+.info span {
+    font-family: 'Line2', sans-serif;
+    color: #8491A0;
+    font-size: 18px;
+}
+
+.image-link {
+    margin-top: 5px;
+}
+
+.image-link a {
+    color: rgb(255, 255, 255);
+    font-family: 'Line2', sans-serif;
+    font-size:16px;
+}
+
+
+/* Responsive for Activity (Mobile & Tablet) */
+@media (max-width: 768px) {
+    .activity-4 {
+        flex-direction: column; /* เรียงแนวตั้ง */
+        align-items: center;
+        gap: 20px; /* ปรับระยะห่าง */
+        width: 100%; /* ให้ขยายเต็มจอ */
+    }
+
+    .activity-4 img.avt {
+        width: 90%; /* ลดขนาดรูปลงเล็กน้อย */
+        height: auto; /* ปรับให้ความสูงสัมพันธ์ */
+    }
+
+    .info {
+        text-align: center;
+        width: 90%; /* ให้เนื้อหากว้างขึ้นในจอเล็ก */
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ACTIVITY */
 .Activity {
     display: flex;
@@ -201,7 +472,6 @@ body {
 }
 
 /* Activity 1 */
-
 .img-avtivity-1 img.avt {
     width: 250px;
     height: 170px;
@@ -241,10 +511,11 @@ body {
 }
 
 
+
 /* Activity 2 */
 .img-avtivity-2 img.avt {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 170px;
     border: 1px sol/*  */id red;
 }
  .img-Agency-2 img {  
@@ -259,40 +530,13 @@ body {
     align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
     justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
     text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px sol/*  */id red;
+}
+
+.info {
+    padding-bottom: 90px;
+    margin: 10px;
     border: 1px so/*  */lid red;
-}
-
-.caption a {
-    display: block;
-    margin-top: 5px;
-    font-family: 'Line2', sans-serif;
-    color: white;
-    font-size: 16px;
-}
-
-.info-2 {
-    padding-bottom: 20px;
-    margin: 10px;
-    border: 1px sol/*  */id red;
-}
-
-.info-2 h4 {
-    font-family: 'Line3', sans-serif;
-    font-size: 21px;
-}
-
-.info-2 span {
-    font-family: 'Line2', sans-serif;
-    color: #8491A0;
-    font-size: 18px;
-    border: 1px s/*  */olid red;
-
-}
-
-
-.info-2 {
-    margin: 10px;
-    border: 1px sol/*  */id red;
 
 }
 
@@ -307,186 +551,57 @@ body {
     font-size: 18px;
 }
 
-.wankeartiyod {
-    font-family: 'Line3', sans-serif;
-    font-size: 22px;
-}
-
-/* colum-activity */
-.row-colum-3 {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
-    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
-    border: 1px sol/*  */id red;
-}
 
 
-/* colum-activity */
-.row-colum-2 {
-    display: flex;
-    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
-    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
-    border: 1px sol/*  */id red;
-}
-
-/* colum-activity */
-.row-colum {
-    display: flex;
-    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
-    gap: 80px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
-    margin-top: 30px;
-    margin-bottom: 30px; /* เว้นระยะระหว่างแถว */
-    border: 1px sol/*  */id red;
-}
-
-.colum1, .colum2, .colum3 {
-    display: flex;
-    flex-direction: column; /* จัดให้องค์ประกอบอยู่ในแนวตั้ง */
-    align-items: center; /* จัดให้อยู่กึ่งกลาง */
-    text-align: center;
-    width: 250px; /* กำหนดความกว้างให้เท่ากัน */
-    transition: 0.3s ease-in-out;
-}
-
-.colum1 img, .colum2 img, .colum3 img {
+/* Activity 3 */
+.img-avtivity-3 img.avt {
     width: 250px;
     height: 170px;
-    border-radius: 8px; /* ทำให้มุมโค้งเล็กน้อย */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ใส่เงาให้ดูสวยขึ้น */
-    border:  1px sol/*  */id red;
+    margin-right: 10px;
+    border: 1px sol/*  */id red;
+}
+ .img-Agency-3 img {  
+    display: inline-block; 
+    height: auto;
+    margin: 0 8px;
+    border: 1px so/*  */lid red;
 }
 
-.colum1 span, .colum2 span, .colum3 span {
-    display: block;
-    margin-top: 10px;
-    font-size: 18px;
+.activity-3 {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    border: 1px sol/*  */id red;
+}
+
+.info {
+    padding-bottom: 90px;
+    margin: 10px;
+    border: 1px so/*  */lid red;
+
+}
+
+.info h4 {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+.info span {
     font-family: 'Line2', sans-serif;
     color: #8491A0;
-    border: 1px sol/*  */id red;
-    transition: 0.3s ease-in-out;
-}
-
-img.avtcc {
-    margin-top: 10px;
-    width: 100px; 
-    height: 100px;
-    border: 1px sol/*  */id red;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-    .row-colum, .row-colum-3 {
-        flex-direction: column; /* เปลี่ยนการจัดเรียงจากแถวเป็นแนวตั้ง */
-        gap: 20px; /* ลดช่องว่างระหว่างคอลัมน์ */
-    }
-
-    .colum1, .colum2, .colum3 {
-        width: 100%; /* ให้แต่ละคอลัมน์ขยายเต็มหน้าจอ */
-    }
-
-    .colum1 img, .colum2 img, .colum3 img {
-        width: 80%; /* ลดขนาดของภาพลงเล็กน้อย */
-        height: auto; /* ปรับความสูงให้สัมพันธ์กับความกว้าง */
-    }
+    font-size: 18px;
 }
 
 
-/* FOOTER */
-.footer {
-    background-color: #191919; /* สีพื้นหลังเข้ม */
-    color: white;
-    text-align: left; /* จัดข้อความชิดซ้าย */
-    justify-content: left;
-    padding: 20px; /* ใช้ padding เล็กน้อย */
-    font-family: 'Poppins', sans-serif;
-    margin-top: 100px;
-    border: 1px sol/*  */id red; /* ลบออกถ้าไม่จำเป็น */
-}
 
-.footer-content {
-    max-width: 600px; /* จำกัดความกว้างของ footer-content */
-    margin: 0 auto;  /* จัดให้อยู่กึ่งกลางของหน้าจอ */
-}
 
-.footer-content h4 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
-.footer-content p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
 
-.footer-content .social-icons {
-    display: flex;
-    justify-content: flex-start; /* จัดไอคอนชิดซ้าย */
-    gap: 15px; /* ระยะห่างระหว่างไอคอน */
-}
 
-.footer-content .social-icons a img {
-    width: 35px;
-    filter: brightness(0) invert(1); /* เปลี่ยน SVG เป็นสีขาว */
-    transition: transform 0.3s ease-in-out, opacity 0.3s;
-}
 
-.footer-content .social-icons a:hover img {
-    transform: scale(1.05); /* ขยายไอคอนเล็กน้อยเมื่อ hover */
-    opacity: 0.8;
-}
 
-/* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 768px */
-@media (max-width: 768px) {
-    .footer {
-        padding: 20px 30px; /* เพิ่ม padding ด้านข้างเมื่อหน้าจอเล็ก */
-    }
 
-    .footer-content {
-        padding: 0 15px; /* เพิ่ม padding ซ้ายขวา */
-    }
-
-    .footer-content h4 {
-        font-size: 18px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
-    }
-
-    .footer-content p {
-        font-size: 14px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
-    }
-
-    .footer-content .social-icons {
-        justify-content: center; /* จัดไอคอนให้อยู่กลาง */
-        gap: 10px;
-    }
-
-    .footer-content .social-icons a img {
-        width: 30px; /* ลดขนาดไอคอนลง */
-    }
-}
-
-/* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 480px */
-@media (max-width: 480px) {
-    .footer {
-        padding: 20px 15px; /* เพิ่ม padding ด้านข้างในมือถือที่เล็กมาก */
-    }
-
-    .footer-content h4 {
-        font-size: 16px; /* ลดขนาด font ให้พอเหมาะ */
-    }
-
-    .footer-content p {
-        font-size: 14px; /* ลดขนาด font ให้พอเหมาะ */
-    }
-
-    .footer-content .social-icons {
-        justify-content: space-evenly; /* จัดไอคอนให้กระจายห่างๆ */
-    }
-
-    .footer-content .social-icons a img {
-        width: 28px; /* ลดขนาดไอคอนลงอีก */
-    }
-}
 
 
 
@@ -543,6 +658,7 @@ img.avtcc {
     }
 }
 
+
 /* สำหรับหน้าจอขนาดเล็กมาก (มือถือจอเล็ก) */
 @media (max-width: 480px) {
     .tap-menu {
@@ -562,5 +678,3 @@ img.avtcc {
         margin: 0 5px;
     }
 }
-
-
