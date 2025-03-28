@@ -358,7 +358,7 @@ body {
     font-size: 21px;
 }
 
-.info span {
+.info-4 span {
     font-family: 'Line2', sans-serif;
     color: #8491A0;
     font-size: 18px;
@@ -592,6 +592,121 @@ body {
     color: #8491A0;
     font-size: 18px;
 }
+
+
+h3.mini-tittle {
+    font-family: 'Line3', sans-serif;
+    font-size: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #191919; /* สีพื้นหลังเข้ม */
+    color: white;
+    text-align: left; /* จัดข้อความชิดซ้าย */
+    justify-content: left;
+    padding: 20px; /* ใช้ padding เล็กน้อย */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 65px;
+    border: 1px sol/*  */id red; /* ลบออกถ้าไม่จำเป็น */
+}
+
+.footer-content {
+    max-width: 600px; /* จำกัดความกว้างของ footer-content */
+    margin: 0 auto;  /* จัดให้อยู่กึ่งกลางของหน้าจอ */
+}
+
+.footer-content h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-content .social-icons {
+    display: flex;
+    justify-content: flex-start; /* จัดไอคอนชิดซ้าย */
+    gap: 15px; /* ระยะห่างระหว่างไอคอน */
+}
+
+.footer-content .social-icons a img {
+    width: 35px;
+    filter: brightness(0) invert(1); /* เปลี่ยน SVG เป็นสีขาว */
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+
+.footer-content .social-icons a:hover img {
+    transform: scale(1.05); /* ขยายไอคอนเล็กน้อยเมื่อ hover */
+    opacity: 0.8;
+}
+
+/* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 768px */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 30px; /* เพิ่ม padding ด้านข้างเมื่อหน้าจอเล็ก */
+    }
+
+    .footer-content {
+        padding: 0 15px; /* เพิ่ม padding ซ้ายขวา */
+    }
+
+    .footer-content h4 {
+        font-size: 18px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
+    }
+
+    .footer-content p {
+        font-size: 14px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
+    }
+
+    .footer-content .social-icons {
+        justify-content: center; /* จัดไอคอนให้อยู่กลาง */
+        gap: 10px;
+    }
+
+    .footer-content .social-icons a img {
+        width: 30px; /* ลดขนาดไอคอนลง */
+    }
+}
+
+/* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 480px */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 15px; /* เพิ่ม padding ด้านข้างในมือถือที่เล็กมาก */
+    }
+
+    .footer-content h4 {
+        font-size: 16px; /* ลดขนาด font ให้พอเหมาะ */
+    }
+
+    .footer-content p {
+        font-size: 14px; /* ลดขนาด font ให้พอเหมาะ */
+    }
+
+    .footer-content .social-icons {
+        justify-content: space-evenly; /* จัดไอคอนให้กระจายห่างๆ */
+    }
+
+    .footer-content .social-icons a img {
+        width: 28px; /* ลดขนาดไอคอนลงอีก */
+    }
+}
+
+
 
 
 
