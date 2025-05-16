@@ -1,41 +1,45 @@
-
 @font-face {
     font-family: 'Line1';
     src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Th.woff2') format('woff2'),
-         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Th.woff') format('woff');
-    font-weight: 100;/* thin */
+        url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Th.woff') format('woff');
+    font-weight: 100;
+    /* thin */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Line2';
     src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Rg.woff2') format('woff2'),
-         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Rg.woff') format('woff');
-    font-weight: 400; /* regular */
+        url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Rg.woff') format('woff');
+    font-weight: 400;
+    /* regular */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Line3';
     src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_Bd.woff2') format('woff2'),
-         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Bd.woff') format('woff');
-    font-weight: 700; /* bold */
+        url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_Bd.woff') format('woff');
+    font-weight: 700;
+    /* bold */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Line4';
     src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_XBd.woff2') format('woff2'),
-         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_XBd.woff') format('woff');
-    font-weight: 800; /* ectrxbold */
+        url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_XBd.woff') format('woff');
+    font-weight: 800;
+    /* ectrxbold */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Line5';
     src: url('/fonts/LINESeedSansTH/woff2/LINESeedSansTH_W_He.woff2') format('woff2'),
-         url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_He.woff') format('woff');
-    font-weight: 900;  /* heavy */
+        url('/fonts/LINESeedSansTH/woff/LINESeedSansTH_W_He.woff') format('woff');
+    font-weight: 900;
+    /* heavy */
     font-style: normal;
 }
 
@@ -56,74 +60,102 @@ body {
 
 /* NAVBAR */
 .tap-menu {
-    background-color: #191919;  /* พื้นหลังnavbar */
-    padding: 28px 40px; /* เว้นระยะขอบบนและล่าง */
-    border: 1px so/*  */lid red;
+    background-color: #191919;
+    /* พื้นหลังnavbar */
+    padding: 28px 40px;
+    /* เว้นระยะขอบบนและล่าง */
+    border: 1px so
+        /*  */
+        lid red;
     margin-bottom: 50px;
 }
 
 .navbar {
     display: flex;
-    justify-content: right; /* กระจายระหว่างโลโก้และเมนู */
+    justify-content: right;
+    /* กระจายระหว่างโลโก้และเมนู */
     align-items: center;
-    border: 1px so/*  */lid red;
+    border: 1px so
+        /*  */
+        lid red;
 }
 
 .navbar ul {
-    list-style-type: none; /* เอาจุดดานหน้าออก */
-    margin: 0; /* ลบระยพห่างบนล่าง */
-    padding: 0; /* ลบช่องว่างในกรอบ */
-    display: flex; /* จัดเรียงแถวแนวนอน */
-    border: 1px sol/*  */id red;
+    list-style-type: none;
+    /* เอาจุดดานหน้าออก */
+    margin: 0;
+    /* ลบระยพห่างบนล่าง */
+    padding: 0;
+    /* ลบช่องว่างในกรอบ */
+    display: flex;
+    /* จัดเรียงแถวแนวนอน */
+    border: 1px sol
+        /*  */
+        id red;
 }
-  
+
 .navbar ul li {
-    margin: 0 15px; /* กำหนดระยะห่างระหว่างแต่ละเมนู */
+    margin: 0 15px;
+    /* กำหนดระยะห่างระหว่างแต่ละเมนู */
 }
 
 .navbar ul li a {
-    text-decoration: none;/* ลบunderline */
+    text-decoration: none;
+    /* ลบunderline */
     color: #ffffff;
-    font-family: 'Plus jakarta Sans', sans-serif ;
+    font-family: 'Plus jakarta Sans', sans-serif;
     font-weight: 500;
     font-size: 15px;
     padding: 10px 15px;
     transition: 0.2s;
 }
+
 .navbar ul li a:hover {
-    color: #424242; /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
-    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+    color: #424242;
+    /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
+    transform: scale(1.05);
+    /* ขยายเล็กน้อยเมื่อ hover */
 }
 
 /* 🔹 เมนูมือถือ (ซ่อนไว้ก่อน) */
 /* ปรับตำแหน่งปุ่มเมนู ☰ */
 .menu-toggle {
-    display: none; /* ซ่อนไว้บนจอใหญ่ */
+    display: none;
+    /* ซ่อนไว้บนจอใหญ่ */
     font-size: 25px;
     color: white;
     cursor: pointer;
     background: none;
     border: none;
     position: relative;
-    margin-right: 20px; /* ขยับปุ่มเข้ามาจากขอบ */
-    border: 1px sol/*  */id red;
+    margin-right: 20px;
+    /* ขยับปุ่มเข้ามาจากขอบ */
+    border: 1px sol
+        /*  */
+        id red;
 }
 
 /* Responsive สำหรับมือถือ */
 @media (max-width: 768px) {
     .navbar {
-        justify-content: space-between; /* เมนูอยู่ซ้าย-ขวา */
-        padding: 0 20px; /* เพิ่ม padding ขอบซ้าย-ขวา */
+        justify-content: space-between;
+        /* เมนูอยู่ซ้าย-ขวา */
+        padding: 0 20px;
+        /* เพิ่ม padding ขอบซ้าย-ขวา */
     }
 
     .menu-toggle {
-        display: block; /* แสดงเมนูปุ่ม ☰ */
-        margin-right: -350px; /* เว้นขอบขวาเพิ่มขึ้น */
+        display: block;
+        /* แสดงเมนูปุ่ม ☰ */
+        margin-right: -350px;
+        /* เว้นขอบขวาเพิ่มขึ้น */
     }
 
     .navbar ul {
-        visibility: hidden; /* ซ่อนเมนูไว้ */
-        opacity: 0; /* เริ่มต้นที่โปร่งใส */
+        visibility: hidden;
+        /* ซ่อนเมนูไว้ */
+        opacity: 0;
+        /* เริ่มต้นที่โปร่งใส */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -132,15 +164,21 @@ body {
         width: 200px;
         border-radius: 8px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-        transform: translateY(-20px); /* เลื่อนขึ้นจากด้านล่าง */
-        transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0s linear 0.3s; /* เพิ่ม transition */
+        transform: translateY(-20px);
+        /* เลื่อนขึ้นจากด้านล่าง */
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0s linear 0.3s;
+        /* เพิ่ม transition */
     }
 
     .navbar ul.show {
-        visibility: visible; /* แสดงเมนู */
-        opacity: 1; /* ทำให้โปร่งใส */
-        transform: translateY(0); /* เลื่อนกลับที่ตำแหน่งเดิม */
-        transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* ทำให้แสดงทันที */
+        visibility: visible;
+        /* แสดงเมนู */
+        opacity: 1;
+        /* ทำให้โปร่งใส */
+        transform: translateY(0);
+        /* เลื่อนกลับที่ตำแหน่งเดิม */
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        /* ทำให้แสดงทันที */
     }
 
     .navbar ul li {
@@ -166,27 +204,34 @@ body {
     align-items: center;
 }
 
-.project h3.gradient-text-project{
-    background: linear-gradient(180deg, #FF8660, #D5491D); /* กำหนดสีไล่ระดับ */
+.project h3.gradient-text-project {
+    background: linear-gradient(180deg, #FF8660, #D5491D);
+    /* กำหนดสีไล่ระดับ */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* ทำให้ข้อความเป็นสี Gradient */
+    -webkit-text-fill-color: transparent;
+    /* ทำให้ข้อความเป็นสี Gradient */
     font-size: 30px;
     font-weight: 800;
     font-family: 'Poppins', sans-serif;
-    display: inline-block; /* สำคัญ! ช่วยให้ Gradient แสดงผล */
-    text-align: center; /* จัดข้อความใน h3 ให้กึ่งกลาง */
+    display: inline-block;
+    /* สำคัญ! ช่วยให้ Gradient แสดงผล */
+    text-align: center;
+    /* จัดข้อความใน h3 ให้กึ่งกลาง */
     margin-bottom: 40px;
 }
 
 .slider-container {
-    width: 90%; /* ให้ใช้พื้นที่ตามขนาดหน้าจอ */
+    width: 90%;
+    /* ให้ใช้พื้นที่ตามขนาดหน้าจอ */
     max-width: 400px;
     height: auto;
     margin: auto;
     transition: 0.3s ease-in-out;
 }
+
 .slider-container:hover {
-    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+    transform: scale(1.05);
+    /* ขยายเล็กน้อยเมื่อ hover */
 }
 
 .slider-container img {
@@ -195,8 +240,11 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    border: 1px sol/*  */id red;
+    border: 1px sol
+        /*  */
+        id red;
 }
+
 .title-container {
     width: 90%;
     max-width: 480px;
@@ -205,69 +253,94 @@ body {
     background: #222222;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    border: 1px so/*  */lid red;
+    border: 1px so
+        /*  */
+        lid red;
 }
+
 .title-container h1 {
     font-size: 25px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    border: 1px sol/*  */id red;
+    border: 1px sol
+        /*  */
+        id red;
 }
 
 .title-container span {
     font-size: 18px;
     font-family: 'Line2', sans-serif;
-    border: 1px sol/*  */id red;
+    border: 1px sol
+        /*  */
+        id red;
 }
 
 .title-container h2 {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
-    border: 1px sol/*  */id red;
+    border: 1px sol
+        /*  */
+        id red;
 }
-.title-container h2, .title-container h3, .title-container span, .title-container p {
+
+.title-container h2,
+.title-container h3,
+.title-container span,
+.title-container p {
     margin: 10px 0;
 }
 
 .title-container p {
     font-size: 18px;
     font-family: 'Line2', sans-serif;
-    border: 1px sol/*  */id red;
+    border: 1px sol
+        /*  */
+        id red;
 }
 
 .title-container p u {
     font-family: 'Line2', sans-serif;
-    border: 1px sol/*  */id red;
+    border: 1px sol
+        /*  */
+        id red;
 }
+
 .qrcode-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
 .qrcode-item {
     text-align: center;
 }
+
 .qrcode-item img {
     width: 110px;
     display: block;
     margin: auto;
-    border: 1px sol/*  */id red;
+    border: 1px sol
+        /*  */
+        id red;
 }
-.qrcode-item a{
+
+.qrcode-item a {
     display: block;
     margin-top: 5px;
     font-size: 16px;
     font-family: 'Line2', sans-serif;
     color: white;
 }
-.qrcode-item-eng a{
+
+.qrcode-item-eng a {
     display: block;
     font-family: 'Line2', sans-serif;
     margin-top: 2px;
     color: white;
     font-size: 16px;
 }
+
 .qrcode-item span {
     display: block;
     margin-top: 5px;
@@ -279,40 +352,56 @@ body {
 
 /* behind-ahead-button*/
 .behind-ahead-button a {
-    border: 1px so/*  */lid red;
+    border: 1px so
+        /*  */
+        lid red;
     display: inline-block;
     font-family: 'Line3', sans-serif;
     background-color: white;
     color: #161513;
-    padding: 5px 15px; /* เพิ่มขนาดของปุ่ม */
+    padding: 5px 15px;
+    /* เพิ่มขนาดของปุ่ม */
     font-size: 18px;
     margin-top: 40px;
     margin-bottom: 10px;
-    text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
-    border-radius: 15px; /* มุมมน */
-    transition: background-color 0.3s, transform 0.2s; /* ทำเอฟเฟกต์ */
+    text-decoration: none;
+    /* เอาขีดเส้นใต้ลิงก์ออก */
+    border-radius: 15px;
+    /* มุมมน */
+    transition: background-color 0.3s, transform 0.2s;
+    /* ทำเอฟเฟกต์ */
 }
 
 .behind-ahead-button a:hover {
-    background-color: #424242; /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
-    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+    background-color: #424242;
+    /* เปลี่ยนเป็นสีเทาดำเมื่อ hover */
+    transform: scale(1.05);
+    /* ขยายเล็กน้อยเมื่อ hover */
 }
 
 /* FOOTER */
 .footer {
-    background-color: #191919; /* สีพื้นหลังเข้ม */
+    background-color: #191919;
+    /* สีพื้นหลังเข้ม */
     color: white;
-    text-align: left; /* จัดข้อความชิดซ้าย */
+    text-align: left;
+    /* จัดข้อความชิดซ้าย */
     justify-content: left;
-    padding: 20px; /* ใช้ padding เล็กน้อย */
+    padding: 20px;
+    /* ใช้ padding เล็กน้อย */
     font-family: 'Poppins', sans-serif;
-    margin-top: 110px;
-    border: 1px sol/*  */id red; /* ลบออกถ้าไม่จำเป็น */
+    margin-top: 65px;
+    border: 1px sol
+        /*  */
+        id red;
+    /* ลบออกถ้าไม่จำเป็น */
 }
 
 .footer-content {
-    max-width: 600px; /* จำกัดความกว้างของ footer-content */
-    margin: 0 auto;  /* จัดให้อยู่กึ่งกลางของหน้าจอ */
+    max-width: 600px;
+    /* จำกัดความกว้างของ footer-content */
+    margin: 0 auto;
+    /* จัดให้อยู่กึ่งกลางของหน้าจอ */
 }
 
 .footer-content h4 {
@@ -328,69 +417,84 @@ body {
 
 .footer-content .social-icons {
     display: flex;
-    justify-content: flex-start; /* จัดไอคอนชิดซ้าย */
-    gap: 15px; /* ระยะห่างระหว่างไอคอน */
+    justify-content: flex-start;
+    /* จัดไอคอนชิดซ้าย */
+    gap: 15px;
+    /* ระยะห่างระหว่างไอคอน */
 }
 
 .footer-content .social-icons a img {
     width: 35px;
-    filter: brightness(0) invert(1); /* เปลี่ยน SVG เป็นสีขาว */
+    filter: brightness(0) invert(1);
+    /* เปลี่ยน SVG เป็นสีขาว */
     transition: transform 0.3s ease-in-out, opacity 0.3s;
 }
 
 .footer-content .social-icons a:hover img {
-    transform: scale(1.05); /* ขยายไอคอนเล็กน้อยเมื่อ hover */
+    transform: scale(1.05);
+    /* ขยายไอคอนเล็กน้อยเมื่อ hover */
     opacity: 0.8;
 }
 
 /* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 768px */
 @media (max-width: 768px) {
     .footer {
-        padding: 20px 30px; /* เพิ่ม padding ด้านข้างเมื่อหน้าจอเล็ก */
+        padding: 20px 30px;
+        /* เพิ่ม padding ด้านข้างเมื่อหน้าจอเล็ก */
     }
 
     .footer-content {
-        padding: 0 15px; /* เพิ่ม padding ซ้ายขวา */
+        padding: 0 15px;
+        /* เพิ่ม padding ซ้ายขวา */
     }
 
     .footer-content h4 {
-        font-size: 18px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
+        font-size: 18px;
+        /* ลดขนาด font ให้พอเหมาะกับมือถือ */
     }
 
     .footer-content p {
-        font-size: 14px; /* ลดขนาด font ให้พอเหมาะกับมือถือ */
+        font-size: 14px;
+        /* ลดขนาด font ให้พอเหมาะกับมือถือ */
     }
 
     .footer-content .social-icons {
-        justify-content: center; /* จัดไอคอนให้อยู่กลาง */
+        justify-content: center;
+        /* จัดไอคอนให้อยู่กลาง */
         gap: 10px;
     }
 
     .footer-content .social-icons a img {
-        width: 30px; /* ลดขนาดไอคอนลง */
+        width: 30px;
+        /* ลดขนาดไอคอนลง */
     }
 }
 
 /* Responsive: ปรับ footer เมื่อหน้าจอเล็กกว่า 480px */
 @media (max-width: 480px) {
     .footer {
-        padding: 20px 15px; /* เพิ่ม padding ด้านข้างในมือถือที่เล็กมาก */
+        padding: 20px 15px;
+        /* เพิ่ม padding ด้านข้างในมือถือที่เล็กมาก */
     }
 
     .footer-content h4 {
-        font-size: 16px; /* ลดขนาด font ให้พอเหมาะ */
+        font-size: 16px;
+        /* ลดขนาด font ให้พอเหมาะ */
     }
 
     .footer-content p {
-        font-size: 14px; /* ลดขนาด font ให้พอเหมาะ */
+        font-size: 14px;
+        /* ลดขนาด font ให้พอเหมาะ */
     }
 
     .footer-content .social-icons {
-        justify-content: space-evenly; /* จัดไอคอนให้กระจายห่างๆ */
+        justify-content: space-evenly;
+        /* จัดไอคอนให้กระจายห่างๆ */
     }
 
     .footer-content .social-icons a img {
-        width: 28px; /* ลดขนาดไอคอนลงอีก */
+        width: 28px;
+        /* ลดขนาดไอคอนลงอีก */
     }
 }
 
@@ -401,15 +505,20 @@ body {
     .tap-menu {
         padding: 20px 50px;
     }
+
     .navbar {
         justify-content: center;
     }
+
     .navbar ul li {
         margin: 0 10px;
     }
+
     .project-grid {
-        grid-template-columns: 1fr; /* ลดเหลือ 1 คอลัมน์ */
+        grid-template-columns: 1fr;
+        /* ลดเหลือ 1 คอลัมน์ */
     }
+
     .title h1 {
         font-size: 32px;
     }
@@ -420,27 +529,35 @@ body {
     .tap-menu {
         padding: 15px 30px;
     }
+
     .navbar {
         flex-direction: column;
         align-items: center;
     }
+
     .navbar ul {
         flex-direction: column;
         text-align: center;
     }
+
     .navbar ul li {
         margin: 5px 0;
     }
+
     .title h1 {
         font-size: 24px;
     }
+
     .aboutMe span {
         font-size: 14px;
     }
+
     .project-grid {
-        grid-template-columns: 1fr; /* แสดงโปรเจคทีละ 1 อัน */
+        grid-template-columns: 1fr;
+        /* แสดงโปรเจคทีละ 1 อัน */
         gap: 10px;
     }
+
     .experience img {
         width: 40px;
         margin: 0 8px;
@@ -452,18 +569,21 @@ body {
     .tap-menu {
         padding: 10px 15px;
     }
+
     .title h1 {
         font-size: 20px;
     }
+
     .aboutMe span {
         font-size: 12px;
     }
+
     .project-grid {
         gap: 5px;
     }
+
     .experience img {
         width: 30px;
         margin: 0 5px;
     }
 }
-
